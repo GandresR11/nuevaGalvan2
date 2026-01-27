@@ -112,20 +112,35 @@ window.onclick = function(event) {
     }
 }
 const servicesData = {
-    balayage: {
-        title: "Balayage Premium",
-        desc: "Técnica de aclarado natural para dar luminosidad y dimensión a tu cabello.",
-        video: "video/balayage.mp4"
+peluqueria: {
+        title: "Peluquería (Hair Styling & Cutting)",
+        desc: "Diseñamos cortes y peinados que definen tu estilo personal con elegancia atemporal.<ul style='list-style-type: disc; margin-left: 20px; margin-top: 10px;>                   <li>Corte de Diseño Femenino</li><li>Styling y Peinados de Autor</li>                   <li>Recogidos de Alta Gala</li>                   <li>Ondas de Precisión</li>                   <li>Protocolos de Acabado Premium</li></ul>",
+        video: "imagenes/Cliente6.mp4"
     },
-    corte: {
-        title: "Corte de Tendencia",
-        desc: "Estilos personalizados que resaltan tus facciones siguiendo las últimas modas.",
-        video: "video/corte.mp4"
+    colorimetria: {
+        title: "Colorimetría (Master Color Art)",
+        desc: "Alquimia pura para tu cabello. Especialistas en técnicas de iluminación y matices que respetan la salud de tu fibra capilar.<br><br>• Coloración de Raíz Orgánica<br>• Balayage & High Lights de Lujo<br>• Mechas de Contorno y Precisión<br>• Matizados de Brillo Espejo<br>• Coloración Botánica y Barros",
+        video: "imagenes/cliente1.mp4" 
     },
-    hidratacion: {
-        title: "Hidratación Profunda",
-        desc: "Tratamiento intensivo para recuperar el brillo y la suavidad natural de tu fibra capilar.",
-        video: "video/hidratacion.mp4"
+    tratamientos: {
+        title: "Tratamientos (Hair Care Rituals)",
+        desc: "Rituales de sanación y rejuvenecimiento. Transformamos la textura de tu cabello con las fórmulas más avanzadas del mercado.<br><br>• Alisado Orgánico Premium<br>• Bótox y Rejuvenecimiento Capilar<br>• Terapias de Reconstrucción Intensiva<br>• Tratamientos Antifrizz y Nutrición<br>• Ampollas de Cuidado Específico",
+        video: "imagenes/Cliente2.mp4"
+    },
+    caballeros: {
+        title: "Caballeros (The Gentlemen’s Club)",
+        desc: "La distinción masculina en manos expertas. Un refugio de cuidado donde la tradición se fusiona con el estilismo contemporáneo.<br><br>• Corte Signature con Lavado<br>• Ritual de Cuidado de Barba<br>• Estilismo Masculino a Medida<br>• Corte Junior de Alta Calidad",
+        video: "imagenes/Cliente3.mp4"
+    },
+    estetica: {
+        title: "Estética (Skincare & Beauty)",
+        desc: "La excelencia del cuidado integral. Elevamos tu belleza natural con tratamientos de vanguardia y resultados excepcionales.<br><br>• Manicura y Pedicura de Alta Gama<br>• Diseño de Mirada (Microblading & Pestañas)<br>• Faciales Avanzados (Dermapen & Diamante)<br>• Masajes Terapéuticos y Relajantes<br>• Depilación y Diseño de Cejas",
+        video: "imagenes/Cliente2.mp4"
+    },
+    jubilados: {
+        title: "Días Dorados (Senior Excellence)",
+        desc: "Experiencia y elegancia para nuestros clientes más distinguidos. Atención preferencial los días miércoles y jueves.<br><br>• Corte y Color Orgánico Especializado<br>• Peinado y Estilismo de Confort<br>• Packs de Cuidado Integral Senior<br>• Atención Personalizada de Alta Calidad",
+        video: "imagenes/Cliente4.mp4"
     }
 };
 
@@ -155,4 +170,3 @@ function showService(id, element) {
         display.style.opacity = 1;
     }, 400);
 }
-
