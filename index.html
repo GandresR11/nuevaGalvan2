@@ -82,8 +82,38 @@
     Cada corte es una obra maestra diseñada para resaltar tu identidad.
   </p>
 </section>
+ <section class="services-interactive">
+  <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Nuestros <span>Servicios</span></h2>
+     <div class="services-container">
+        
+       <div style="width: 20%;">     
+        <ul class="services-menu">
+">
+            <li class="service-item" onclick="showService('peluqueria', this)">Peluquería</li>
+            <li class="service-item" onclick="showService('colorimetria', this)">Colorimetria</li>
+            <li class="service-item" onclick="showService('tratamientos', this)">Tratamientos</li>
+           <li class="service-item" onclick="showService('caballeros', this)">Caballeros</li>
+           <li class="service-item active" onclick="showService('estetica', this)">Estetica</li>
+           <li class="service-item" onclick="showService('jubilados', this)">Jubilados</li>
+        </ul>
+</div>
 
-    <section id="services" class="bg-darker services-section">
+        <div class="service-display" id="service-display">
+            <div class="video-wrapper">
+                <video id="service-video" autoplay="" muted="" loop="" playsinline="" poster="img/placeholder.jpg">
+                    <source id="video-source" src="video/balayage.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="service-info">
+                <h3 id="service-title">Peluquería (Hair Styling & Cutting)</h3>
+                <p id="service-desc">Diseñamos cortes y peinados que no solo siguen tendencias, sino que definen tu estilo personal con elegancia atemporal.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   <!-- <section id="services" class="bg-darker services-section">
   <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Nuestros <span>Servicios</span></h2>
   
   <div class="grid-container">
@@ -127,7 +157,7 @@
         </ul>
     </div>
 </div>
-</section>
+</section>-->
     <section id="exclusivo-novias">
         <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Exclusivos para <span>Novias</span></h2>
         <div id="novias">
@@ -258,38 +288,6 @@
    
 </div>
 </section>    
-    
-    <section class="services-interactive">
-    <div class="services-container">
-        
-       <div style="width: 20%;">     
-        <ul class="services-menu">
-">
-            <li class="service-item" onclick="showService('peluqueria', this)">Peluquería</li>
-            <li class="service-item" onclick="showService('colorimetria', this)">Colorimetria</li>
-            <li class="service-item" onclick="showService('tratamientos', this)">Tratamientos</li>
-           <li class="service-item" onclick="showService('caballeros', this)">Caballeros</li>
-           <li class="service-item active" onclick="showService('estetica', this)">Estetica</li>
-           <li class="service-item" onclick="showService('jubilados', this)">Jubilados</li>
-        </ul>
-</div>
-
-        <div class="service-display" id="service-display">
-            <div class="video-wrapper">
-                <video id="service-video" autoplay="" muted="" loop="" playsinline="" poster="img/placeholder.jpg">
-                    <source id="video-source" src="video/balayage.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="service-info">
-                <h3 id="service-title">Peluquería (Hair Styling & Cutting)</h3>
-                <p id="service-desc">Diseñamos cortes y peinados que no solo siguen tendencias, sino que definen tu estilo personal con elegancia atemporal.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
 <footer>
         <p style="text-align:center">© 2026 The Saloon by Mr. Galvan - Guillermo Riaño Diseño Web -</p>
         <div class="social-links" style="justify-content:center;">
