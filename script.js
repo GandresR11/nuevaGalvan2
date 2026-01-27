@@ -115,12 +115,12 @@ const servicesData = {
 peluqueria: {
         title: "Peluquería (Hair Styling & Cutting)",
         desc: "Diseñamos cortes y peinados que definen tu estilo personal con elegancia atemporal.<ul style='list-style-type: disc; margin-left: 20px; margin-top: 10px;>                   <li>Corte de Diseño Femenino</li><li>Styling y Peinados de Autor</li>                   <li>Recogidos de Alta Gala</li>                   <li>Ondas de Precisión</li>                   <li>Protocolos de Acabado Premium</li></ul>",
-        video: "imagenes/Cliente6.mp4"
+        video: "imagenes/Cliente3.mp4"
     },
     colorimetria: {
         title: "Colorimetría (Master Color Art)",
         desc: "Alquimia pura para tu cabello. Especialistas en técnicas de iluminación y matices que respetan la salud de tu fibra capilar.<br><br>• Coloración de Raíz Orgánica<br>• Balayage & High Lights de Lujo<br>• Mechas de Contorno y Precisión<br>• Matizados de Brillo Espejo<br>• Coloración Botánica y Barros",
-        video: "imagenes/cliente1.mp4" 
+        video: "imagenes/Cliente1.mp4" 
     },
     tratamientos: {
         title: "Tratamientos (Hair Care Rituals)",
