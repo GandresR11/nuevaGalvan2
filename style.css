@@ -533,7 +533,8 @@ video::-webkit-media-controls-play-button {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
-    font-family: 'Playfair Display', serif;
+  color: black;
+    /*font-family: 'Playfair Display', serif;*/
 }
 
 .services-container {
@@ -593,12 +594,11 @@ video::-webkit-media-controls-play-button {
 /* Ajuste para Móviles */
 @media (max-width: 768px) {
     .services-container {
-        flex-direction: column;
+        flex-direction: row;
     }
     .services-menu {
         width: 100%;
-        display: flex;
-        overflow-x: auto;
+                overflow-x: auto;
         gap: 20px;
         white-space: nowrap;
         padding-bottom: 10px;
