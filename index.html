@@ -1,0 +1,304 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Saloon | Elegancia y Estilo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/imagen_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Montserrat:wght@200;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Montserrat:wght@200;300;400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+ <header class="main-header" style="background: rgba(10, 10, 10, 0.98); padding: 0.8rem 5%;">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="imagenes/logo_completo.png" alt="The Saloon Logo">
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul class="nav-links" style="align-items: center;">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#location">Ubicación</a></li>
+                    <li><a href="#exclusivo-novias" style="color: #c5a059; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 26px; text-decoration: none; font-weight: 700; text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);">Novias</a></li>
+                    <li> <a id="openModalSq"> Reserva</a>
+
+<!--<div id="bookingModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button" style="top: -8%;color: var(--dorado);">CERRAR</span>
+        <iframe src="https://app.squareup.com/appointments/buyer/widget/grqozj859b2q0e/LDMF25HYMRBQP" 
+                style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+</div>--></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <h1 data-aos="fade-up" class="aos-init aos-animate">Arte, Estilo y Distinción</h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Tu cabello merece el trato de una joya.</p>
+        <!--<button class="btn-gold aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400" onclick="openCalendar()">Agendar Cita</button>
+        <a class="btn-gold aos-init aos-animate" style="text-decoration: none;" target="_blank" rel="noopener noreferrer" href="https://app.squareup.com/appointments/buyer/widget/grqozj859b2q0e/LDMF25HYMRBQP">Reservar una cita</a>-->
+    <a id="openModalSq" class="btn-gold aos-init aos-animate" style="text-decoration: none; cursor: pointer;">
+    Reservar una cita
+</a>
+
+<div id="bookingModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button" style="top: -8%;color: var(--dorado);">CERRAR</span>
+        <iframe src="https://app.squareup.com/appointments/buyer/widget/grqozj859b2q0e/LDMF25HYMRBQP" style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+</div>
+    </section>
+
+    <section id="about" data-aos="fade-right" class="aos-init aos-animate">
+        <h2 class="section-title">Nuestra <span>Esencia</span></h2>
+        <figure class="imagen-destacada">
+        <img src="imagenes/Equipo.jpeg" alt="Nuestros Estilistas">
+        </figure>
+        <p class="section-text">Somos un refugio de elegancia donde la técnica de vanguardia se encuentra con el servicio personalizado de lujo. Cada corte es una obra maestra diseñada para resaltar tu identidad.</p>
+   
+
+  <!-- Contenedor de videos -->
+  <div class="videos-container">
+    <video src="imagenes/Cliente1.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+    <video src="imagenes/Cliente4.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+    <video src="imagenes/Cliente2.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+  </div>
+
+  <p class="section-text">
+    Somos un refugio de elegancia donde la técnica de vanguardia se encuentra con el servicio personalizado de lujo. 
+    Cada corte es una obra maestra diseñada para resaltar tu identidad.
+  </p>
+</section>
+
+    <section id="services" class="bg-darker services-section">
+  <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Nuestros <span>Servicios</span></h2>
+  
+  <div class="grid-container">
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-cut card-icon"></i>
+            <h3>Peluquería</h3>
+        </div>
+        <ul class="lista-servicios">
+            <li><span class="servicio-nombre">Corte</span><span class="servicio-valor">15€</span></li>
+            <li><span class="servicio-nombre">Peinado</span><span class="servicio-valor">20€</span></li>
+        </ul>
+    </div>
+<div class="card">
+        <div class="card-header">
+            <i class="fas fa-cut card-icon"></i>
+            <h3>Peluquería</h3>
+        </div>
+        <ul class="lista-servicios">
+            <li><span class="servicio-nombre">Corte</span><span class="servicio-valor">15€</span></li>
+            <li><span class="servicio-nombre">Peinado</span><span class="servicio-valor">20€</span></li>
+        </ul>
+    </div>
+  <div class="card">
+        <div class="card-header">
+            <i class="fas fa-cut card-icon"></i>
+            <h3>Peluquería</h3>
+        </div>
+        <ul class="lista-servicios">
+            <li><span class="servicio-nombre">Corte</span><span class="servicio-valor">15€</span></li>
+            <li><span class="servicio-nombre">Peinado</span><span class="servicio-valor">20€</span></li>
+        </ul>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-magic card-icon"></i>
+            <h3>Color</h3>
+        </div>
+        <ul class="lista-servicios">
+            <li><span class="servicio-nombre">Tinte</span><span class="servicio-valor">30€</span></li>
+        </ul>
+    </div>
+</div>
+</section>
+    <section id="exclusivo-novias">
+        <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Exclusivos para <span>Novias</span></h2>
+        <div id="novias">
+           <!-- Contenedor de videos -->
+  <div class="videos-container">
+    <video src="imagenes/Novia5.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+    <video src="imagenes/Novia6.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+    <video src="imagenes/Novia2.mp4" class="video-ig" autoplay="" muted="" loop="" playsinline=""></video>
+  </div>
+            <p class="section-text">Somos un refugio de elegancia donde la técnica de vanguardia se encuentra con el servicio personalizado de lujo. Cada corte es una obra maestra diseñada para resaltar tu identidad.</p>
+    <p class="section-text">Quieres mas infomración excribenos al whtsapp o agenda tu cita.</p>
+        </div>
+    </section>
+    <section id="servicestrcr" class="bg-darker services-section">
+       
+        <div class="grid-container">
+            <div class="card aos-init aos-animate" data-aos="flip-left" style="cursor: pointer;">
+                 <p class="section-title aos-init aos-animate" data-aos="fade-up">Miercoles y Jueves <span>de Jubilados</span></p>
+                <i class="fas fa-cut card-icon"></i>
+                <ul class="lista-servicios" style="">
+        <li>
+            <span class="servicio-nombre">Color Raiz Organica</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">25,95</span>
+        </li>
+        <li>
+            <span class="servicio-nombre">Color + Mecha Corto</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">49,95</span>
+        </li>
+        <li>
+            <span class="servicio-nombre">Cortar</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">13,95</span>
+        </li>
+                     <li>
+            <span class="servicio-nombre">Peinar Pelo Corto</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">12,95</span>
+        </li>
+                     <li>
+            <span class="servicio-nombre">Peinar Pelo Medio</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">16,95</span>
+        </li>
+                     <li>
+            <span class="servicio-nombre">Cortar + Peinar</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">25,95</span>
+        </li>
+                     <li>
+            <span class="servicio-nombre">Corte Caballero</span>
+            <span class="servicio-puntos"></span>
+            <span class="servicio-valor">12,95</span>
+        </li>
+    </ul>
+            </div>
+            
+           </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2 class="section-title aos-init aos-animate" data-aos="fade-up" style="
+    margin: 0;
+">Reserva tu <span>Experiencia</span></h2>
+        
+       <a id="openModalSq" class="btn-gold aos-init aos-animate" style="text-decoration: none; cursor: pointer;">
+    cLic aquí para agendar
+</a>
+
+<div id="bookingModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button" style="top: -8%;color: var(--dorado);">CERRAR</span>
+        <iframe src="https://app.squareup.com/appointments/buyer/widget/grqozj859b2q0e/LDMF25HYMRBQP" style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+</div>
+    </section>
+
+    <div id="calendarModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCalendar()">CERRAR</span>
+            <iframe src="https://calendar.app.google/hWHvNfavn41brphr7" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <a href="https://wa.me/TUNUMEROAQUI?text=Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+   </a>
+
+
+    <a href="#exclusivo-novias" class="btn-noviasl">
+        <i class="fas fa-heart"></i>
+  <span class="exclusivo">Exclusivo</span>
+  <span class="novias">Novias</span>
+</a>
+    
+<section id="location" class="location-section">
+<div class="location-container">  
+    <div class="location-info">
+       <h2 class="section-title">Visítanos</h2> 
+        <div class="info-box">
+                <h3>THE SALOON</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Pedro Rico 13, Madrid, España</p>
+                <a href="https://maps.google.com/?q=Calle+Pedro+Rico+13+Madrid+España" target="_blank" class="map-link">Ver en el Google Maps</a>
+            </div>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone"></i><a href="tel:+34641798933" class="map-link"> Teléfono: +34 641 79 89 33 </a></p>
+               <!-- <a href="https://wa.me/34641798933" class="btn-gold" style="display: inline-block; padding: 10px 20px; font-size: 0.8rem;">
+                    <i class="fab fa-whatsapp"></i> Escríbenos
+                </a>-->
+                <div class="social-links">
+                    <a href="https://maps.google.com/?q=Calle+Pedro+Rico+13+Madrid+España" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://wa.me/34641798933"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/mr.galvan?igsh=czR3d2k3ZGJ3OGxl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mr.galvan?igsh=czR3d2k3ZGJ3OGxl"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+         </div>
+    <div class="location-map">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.123456789!2d-3.6923456!3d40.4812345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296068694073%3A0x6a08608f1b62985b!2sC.%20de%20Pedro%20Rico%2C%2013%2C%20Fuencarral-El%20Pardo%2C%2028029%20Madrid%2C%20España!5e0!3m2!1ses!2s!4v1700000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+   
+</div>
+</section>    
+    
+    <section class="services-interactive">
+    <div class="services-container">
+        
+        <ul class="services-menu">
+            <li class="service-item active" onclick="showService('balayage', this)">Balayage Premium</li>
+            <li class="service-item" onclick="showService('corte', this)">Corte de Tendencia</li>
+            <li class="service-item" onclick="showService('hidratacion', this)">Hidratación Profunda</li>
+        </ul>
+
+        <div class="service-display" id="service-display">
+            <div class="video-wrapper">
+                <video id="service-video" autoplay="" muted="" loop="" playsinline="" poster="img/placeholder.jpg">
+                    <source id="video-source" src="video/balayage.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="service-info">
+                <h3 id="service-title">Balayage Premium</h3>
+                <p id="service-desc">Técnica de aclarado natural para dar luminosidad y dimensión a tu cabello sin marcas de raíz.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+        <p style="text-align:center">© 2026 The Saloon by Mr. Galvan - Guillermo Riaño Diseño Web -</p>
+        <div class="social-links" style="justify-content:center;">
+            
+                    <a href="https://maps.google.com/?q=Calle+Pedro+Rico+13+Madrid+España" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://wa.me/34641798933"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/34641798933"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mr.galvan?igsh=czR3d2k3ZGJ3OGxl"><i class="fab fa-instagram"></i></a>
+                </div>
+    </footer> 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script> 
+    
+
+
+
+
+</body></html>

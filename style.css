@@ -1,0 +1,610 @@
+/* VARIABLES */
+
+:root {
+  
+    --negro: #0a0a0a;
+
+    --blanco: #ffffff;
+
+    --dorado: #c5a059;
+
+    --plateado: #e0e0e0;
+
+    --gris-oscuro: #1a1a1a;
+
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+/* RESET */
+
+* {
+
+    margin: 0; padding: 0; box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: var(--negro);
+
+    color: var(--blanco);
+
+    line-height: 1.6;
+
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+
+    margin: 0; padding: 0; box-sizing: border-box;
+
+}
+
+
+
+h1, h2, h3, .nav-logo {
+
+    font-family: 'Cinzel', serif;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* HEADER */
+
+header {
+
+    position: fixed;width: 100%;z-index: 1000;
+
+    background: rgba(10, 10, 10, 0.95);
+
+    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+
+    padding: 1.2rem 5%;
+
+    /*display: flex;*/
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+.main-header {
+    position: fixed; width: 100%; z-index: 1000;
+    padding: 10px 20px;
+    background: rgba(10, 10, 10, 0.95);
+    /*background: rgba(255, 255, 255, 0.95);*/
+    
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+}
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo img { height: 40px; }
+
+/* Menú oculto en móvil por defecto */
+.nav-menu {
+    position: absolute; top: 100%; left: 0; width: 100%;
+    background: white; display: none; padding: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.nav-menu.active { display: block; background:var(--negro); }
+.nav-links { list-style: none; text-align: center; }
+.nav-links li { margin: 15px 0; }
+.nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+.nav-links li:hover {transform:scale(1.1); transition: transform 0.3s ease;filter: brightness(1.2);}
+.menu-toggle { background: none; border: none; font-size: 1.5rem; color: var(--primary); cursor: pointer; }
+
+
+
+
+.nav-logo { color: var(--dorado); font-size: 1.5rem; font-weight: bold; }
+
+/*.nav-menu { display: flex; gap: 2.5rem; list-style: none; }*/
+
+.nav-link { 
+
+    text-decoration: none; 
+
+    color: var(--blanco); 
+
+    font-size: 0.9rem; 
+
+    text-transform: uppercase; 
+
+    transition: var(--transition);
+
+}
+
+.nav-link:hover { color: var(--dorado); }
+.servicio-puntos {
+    flex-grow: 1; /* Esto hace que los puntos crezcan hasta llenar el vacío */
+    border-bottom: 1.5px dotted #aaa; /* Aquí defines el color y grosor de los puntos */
+    height: 1.2em; /* Ajusta la posición vertical de los puntos */
+}
+.servicio-nombre {
+    font-weight: 600;
+    color: var(--blanco); /* O el color que uses en tu diseño */
+}
+.servicio-valor {
+    font-weight: bold;
+   color: var(--dorado); /* Un color dorado o resaltado para el precio */
+}
+/* SECCIONES */
+section {padding: 5%;text-align: center;}
+.bg-darker { background-color: #050505; }
+.section-title { font-size: 2.5rem; margin-bottom: 30px; }
+.section-title span { color: var(--dorado); }
+.section-text { max-width: 800px; margin: 0 auto; color: var(--plateado); }
+
+/* HERO */
+#home {
+    height: 75vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://github.com/GandresR11/nuevaGalvan/blob/main/imagenes/Encabezado2.jpeg?raw=true') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+#home h1 { font-size: 3.5rem; margin-bottom: 10px; }
+/* BOTONES */
+.btn-gold {
+    padding: 15px 40px;
+    border: 1px solid var(--dorado);
+    background: transparent;
+    color: var(--dorado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 30px;
+}
+.btn-gold:hover {
+    background: var(--dorado);
+    color: var(--negro);
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+}
+
+/* CARDS (SERVICIOS/PRODUCTOS) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+.card {background: var(--gris-oscuro);padding: 5%;border: 1px solid #222;transition: var(--transition);}
+.card:hover { border-color: var(--dorado); transform: translateY(-10px); }
+.card-icon { color: var(--dorado); font-size: 2.5rem; margin-bottom: 20px; }
+/*.card-header{padding: 20px;}*/
+.product-placeholder { height: 200px; background: #222; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #444; }
+.price { color: var(--dorado); font-weight: bold; margin-top: 10px; }
+
+/* MODAL */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+}
+.modal-content {
+    position: relative;
+    background-color: var(--blanco);
+    margin: 10% auto;
+    width: 90%;
+    max-width: 1000px;
+    height: 85vh;
+    border: 3px solid var(--dorado);
+    border-radius: 10px;
+    animation: slideUp 0.5s ease;
+}
+.close-modal {
+    position: absolute;
+    top: -12%; right: 3%;
+    color: var(--dorado);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* WHATSAPP */
+.whatsapp-float {position: fixed;bottom: 10%;right: 10%;background: #25d366;color: white;width: 3.3rem;: 80px;border-radius: 50%;display: flex;justify-content: center;align-items: center;font-size: 3.5rem;z-index: 1000;transition: var(--transition);text-decoration: none;height: 3.2rem;}
+.whatsapp-float:hover { transform: scale(1.1); }
+
+/* --- SECCIÓN UBICACIÓN --- */
+.location-section {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), 
+                url('https://github.com/GandresR11/nuevaGalvan/blob/main/imagenes/Fondo1.jpeg?raw=true'); /* Cambia esta URL por la foto de tu local */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 5%;
+}
+.services-section {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), 
+                url('https://github.com/GandresR11/nuevaGalvan/blob/main/imagenes/Servicios1.jpeg?raw=true'); /* Cambia esta URL por la foto de tu local */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5%;
+}
+.location-container {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.location-info {
+   /* flex: 1;*/
+   /* min-width: 300px;*/
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+margin: auto;
+    padding: 40px;
+    border-left: 3px solid var(--dorado);
+}
+.info-box h3 {
+    color: var(--dorado);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.info-box p {
+    margin-bottom: 5px;
+    color: var(--plateado);
+}
+.map-link {
+    color: var(--dorado);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+.map-link:hover {
+    color: var(--blanco);
+}
+.social-links {
+    margin: 15px 0;
+    /*font-size: 2.5rem;*/
+    display: flex;
+    gap: 20px;
+    color: var(--dorado);
+}
+.social-links a {
+  display: block;
+  margin: 8px 0;
+  text-decoration: none;
+  /*color: #333;*/
+  font-size: 18px;
+}
+.social-links i {
+  margin-right: 8px;
+  color: var(--dorado); /* verde WhatsApp por ejemplo */
+}
+.social-links i:hover {
+   color: var(--plateado);
+}
+.location-map {
+    /*flex: 1;*/
+    /*min-width: 300px;*/
+    margin:auto;
+    border: 1px solid var(--dorado);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+    .location-info { text-align: center; border-left: none; border-bottom: 3px solid var(--dorado); }
+    .social-links { justify-content: center; }
+}
+.imagen-destacada img {
+    width: 100%;        /* En móviles ocupa todo el ancho */
+    max-width: 600px;   /* En pantallas grandes, no pasará de 600px (ajusta este valor a tu gusto) */
+    height: auto;
+    display: block;
+    margin: auto;  /* El 'auto' en los lados centra la imagen cuando es más pequeña que la pantalla */
+   padding:0;
+    border-radius: 8px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    filter: brightness(0.8);
+}
+
+/* FOOTER */
+footer { padding: 50px; border-top: 1px solid #222; color: #555; font-size: 0.8rem; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-menu { display: none; }
+    #home h1 { font-size: 2.2rem; }
+}
+
+/* MEDIA QUERIES PARA ESCRITORIO */
+@media (min-width: 992px) {
+    .logo img { height: 60px; }
+    .menu-toggle { display: none; }
+    .nav-menu { position: static; display: block; width: auto; background: none; box-shadow: none; padding: 0; }
+    .nav-links { display: flex; gap: 30px; }
+    .hero-video { height: 100vh; }
+    .glamour-title { font-size: 5rem; }
+    .services-container { padding: 100px 10%; }
+    .tabs-scroll-container { overflow: hidden; display: flex; justify-content: center; }
+    .tab-btn { padding: 12px 25px; font-size: 0.9rem; }
+    .location-grid { grid-template-columns: 1fr 1fr; align-items: center; }
+    .price-list li { font-size: 1.1rem; }
+}
+
+/* SERVICIOS RESPONSIVOS */
+.services-container { padding: 50px 20px; }
+.tabs-scroll-container { 
+    overflow-x: auto; /* Permite scroll horizontal en botones si hay muchos en móvil */
+    white-space: nowrap;
+    margin-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
+}
+.tabs-menu { display: inline-flex; gap: 10px; padding-bottom: 10px; }
+.tab-btn { padding: 8px 15px; background: white; border: 1px solid #ddd; font-size: 0.8rem; }
+.tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+.price-list li { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; border-bottom: 1px solid #eee; }
+
+/* BOTONES FLOTANTES MÁS PEQUEÑOS EN MÓVIL */
+.floating-bridal-btn {
+    position: fixed; left: 15px; bottom: 15px; width: 65px; height: 65px;
+    background: white; border: 1px solid var(--primary); border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 99;
+}
+.floating-bridal-btn span { font-size: 0.5rem; font-weight: bold; color: var(--primary); }
+.videos-container {
+  display: flex;              /* Activa flexbox */
+  justify-content: center;    /* Centra los videos horizontalmente */
+  gap: 20px;                  /* Espacio entre videos */
+  margin: 20px 0;
+}
+.videos-container video {
+  width: 30%;                 /* Cada video ocupa un tercio del ancho */
+  border-radius: 8px;         /* Bordes redondeados opcionales */
+}
+.video-ig {
+  width: 320px;      /* tamaño típico Instagram */
+  height: 320px;     /* cuadrado */
+  object-fit: cover; /* recorta para mantener proporción */
+  border-radius: 12px;
+}
+/* Ocultar todos los controles excepto el botón de play */
+video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-play-button {
+  display: block !important;
+}
+/*Boton Novias*/
+.btn-noviasl {
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #e6b566;
+  background: var(--dorado);
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+  overflow: hidden;
+
+  /* SOMBRA INICIAL: Difusa y suave para simular elevación */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  
+  /* ANIMACIONES: Brillo (10s) y Flotación (3s) combinadas */
+  animation: float-animation 3s infinite ease-in-out;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  line-height: 0.7;
+}
+
+/* Efecto al pasar el mouse: se eleva más y la sombra se aleja */
+.btn-noviasl:hover {
+  transform: scale(1.1) translateY(-10px);
+  background: var(--plateado);
+  color: var(--dorado);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); /* Sombra más profunda al alejarse del "suelo" */
+}
+
+/* Animación de levitación suave */
+@keyframes float-animation {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    transform: translateY(-12px); /* El botón sube */
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3); /* La sombra se expande y suaviza */
+  }
+}
+
+/* --- Se mantiene el efecto de brillo previo --- */
+.shimmer-effect::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.5) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shine 10s infinite ease-in-out;
+}
+
+@keyframes shine {
+  0% { left: -150%; }
+  15% { left: 150%; }
+  100% { left: 150%; }
+}
+
+/* Ajustes de texto para legibilidad sobre el brillo */
+.btn-noviasl .exclusivo, 
+.btn-noviasl .novias, 
+.btn-noviasl i {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-noviasl .exclusivo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+.btn-noviasl .novias {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 4px;
+}
+/* Asegura que las listas estén ocultas por defecto */
+/* Estado Inicial: Oculto */
+/* 1. Estado base: oculto mediante altura 0 */
+/* 1. Estado base: oculto mediante altura 0 */
+.lista-servicios {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+/* 2. Estado activo: se activa con la clase .show */
+.lista-servicios.show {
+    max-height: 1000px; /* Un valor lo suficientemente alto */
+    opacity: 1;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease;
+}
+
+/* 3. Estilo visual de la card para que se sepa que es clickeable */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+.services-interactive {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.services-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Menú lateral */
+.services-menu {
+    list-style: none;
+    flex: 1;
+    padding: 0;
+}
+
+.service-item {
+    padding: 15px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    color: #444;
+}
+
+.service-item:hover, .service-item.active {
+    color: #c5a059; /* Tu dorado */
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* Panel de exhibición */
+.service-display {
+    flex: 1.5;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: opacity 0.4s ease;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-info {
+    padding: 25px;
+}
+
+.service-info h3 {
+    color: #c5a059;
+    margin-top: 0;
+}
+
+/* Ajuste para Móviles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+    .services-menu {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+    .service-item {
+        border-bottom: none;
+        font-size: 16px;
+    }
+}
