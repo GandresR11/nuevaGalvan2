@@ -156,8 +156,8 @@ function showService(id, element) {
     setTimeout(() => {
         // 3. Cambiar datos
         const data = servicesData[id];
-        document.getElementById('service-title').innerText = data.title;
-        document.getElementById('service-desc').innerText = data.desc;
+        document.getElementById('service-title').innerHTML = data.title;
+        document.getElementById('service-desc').innerHTML = data.desc;
         
         const video = document.getElementById('service-video');
         const source = document.getElementById('video-source');
