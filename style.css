@@ -597,7 +597,7 @@ video::-webkit-media-controls-play-button {
         display:block;
     }
     .services-menu {
-      displya:grid;
+      display:grid;
         width: 100%;
                 overflow-x: auto;
        /* gap: 20px;*/
