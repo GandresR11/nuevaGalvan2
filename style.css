@@ -594,7 +594,7 @@ video::-webkit-media-controls-play-button {
 /* Ajuste para Móviles */
 @media (max-width: 768px) {
     .services-container {
-        flex-direction: row;
+        display:flex;
     }
     .services-menu {
         width: 100%;
