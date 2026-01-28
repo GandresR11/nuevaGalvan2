@@ -114,7 +114,7 @@ window.onclick = function(event) {
 const servicesData = {
 peluqueria: {
         title: "Peluquería (Hair Styling & Cutting)",
-        desc: "Diseñamos cortes y peinados que definen tu estilo personal con elegancia atemporal.<ul style='list-style-type: disc; margin-left: 20px; margin-top: 10px;>                   <li>Corte de Diseño Femenino</li><li>Styling y Peinados de Autor</li>                   <li>Recogidos de Alta Gala</li>                   <li>Ondas de Precisión</li>                   <li>Protocolos de Acabado Premium</li></ul>",
+        desc: "El arte de esculpir tu identidad. Diseñamos cortes y peinados que definen tu estilo personal con elegancia atemporal.<br><br>• Corte de Diseño Femenino<br>• Styling y Peinados de Autor<br>• Recogidos de Alta Gala<br>• Ondas de Precisión (Al agua y Rotas)<br>• Protocolos de Acabado Premium",
         video: "imagenes/Cliente3.mp4"
     },
     colorimetria: {
