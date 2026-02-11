@@ -114,7 +114,7 @@ window.onclick = function(event) {
 const servicesData = {
 peluqueria: {
         title: "Peluquería (Hair Styling & Cutting)",
-        desc: "El arte de esculpir tu identidad. Diseñamos cortes y peinados que definen tu estilo personal con elegancia atemporal.<br><br>• Corte de Diseño Femenino<br>• Styling y Peinados de Autor<br>• Recogidos de Alta Gala<br>• Ondas de Precisión (Al agua y Rotas)<br>• Protocolos de Acabado Premium",
+        desc: "Tu estilo, a tu manera. Creamos cortes y peinados pensados para resaltar tu personalidad y hacerte sentir bien en cada ocasión.<br><br>• Corte Femenino personalizado<br>• Peinado y Styling para tu dia a dia o eventos<br>• Recogidos para fiestas o eventos<br>• Ondas (Al agua y Rotas)<br>• Acabados profesionales de larga duración",
         video: "imagenes/Cliente3.mp4"
     },
     colorimetria: {
@@ -124,17 +124,17 @@ peluqueria: {
     },
     tratamientos: {
         title: "Tratamientos (Hair Care Rituals)",
-        desc: "Rituales de sanación y rejuvenecimiento. Transformamos la textura de tu cabello con las fórmulas más avanzadas del mercado.<br><br>• Alisado Orgánico Premium<br>• Bótox y Rejuvenecimiento Capilar<br>• Terapias de Reconstrucción Intensiva<br>• Tratamientos Antifrizz y Nutrición<br>• Ampollas de Cuidado Específico",
+        desc: "Rituales de reparación y rejuvenecimiento. Transformamos la textura de tu cabello con las fórmulas más avanzadas del mercado.<br><br>• Alisado Orgánico Premium<br>• Bótox y Rejuvenecimiento Capilar<br>• Terapias de Reconstrucción Intensiva<br>• Tratamientos Antifrizz y Nutrición<br>• Ampollas de Cuidado Específico",
         video: "imagenes/Cliente2.mp4"
     },
     caballeros: {
         title: "Caballeros (The Gentlemen’s Club)",
-        desc: "La distinción masculina en manos expertas. Un refugio de cuidado donde la tradición se fusiona con el estilismo contemporáneo.<br><br>• Corte Signature con Lavado<br>• Ritual de Cuidado de Barba<br>• Estilismo Masculino a Medida<br>• Corte Junior de Alta Calidad",
+        desc: "La distinción masculina en manos expertas. Un refugio de cuidado donde la tradición se fusiona con el estilismo contemporáneo.<br><br>• Corte con Lavado<br>• Ritual de Cuidado de Barba<br>• Estilismo Masculino a Medida<br>• Corte Junior de Alta Calidad",
         video: "imagenes/Cliente3.mp4"
     },
     estetica: {
         title: "Estética (Skincare & Beauty)",
-        desc: "La excelencia del cuidado integral. Elevamos tu belleza natural con tratamientos de vanguardia y resultados excepcionales.<br><br>• Manicura y Pedicura de Alta Gama<br>• Diseño de Mirada (Microblading & Pestañas)<br>• Faciales Avanzados (Dermapen & Diamante)<br>• Masajes Terapéuticos y Relajantes<br>• Depilación y Diseño de Cejas",
+        desc: "La excelencia del cuidado integral. Elevamos tu belleza natural con tratamientos de vanguardia y resultados excepcionales.<br><br>• Manicura y Pedicura de Alta Gama<br>• Diseño de Mirada (Microblading & Pestañas)<br>• Faciales Avanzados (Dermapen & Punta de Diamante)<br>• Masajes Terapéuticos y Relajantes<br>• Depilación y Diseño de Cejas con Hilo",
         video: "imagenes/Cliente2.mp4"
     },
     jubilados: {
