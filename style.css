@@ -386,10 +386,15 @@ footer { padding: 50px; border-top: 1px solid #222; color: #555; font-size: 0.8r
   gap: 20px;                  /* Espacio entre videos */
   margin: 20px 0;
 }
-.videos-container video img {
+.videos-container video {
   width: 30%;                 /* Cada video ocupa un tercio del ancho */
   border-radius: 8px;         /* Bordes redondeados opcionales */
 }
+.videos-container img {
+  width: 30%;                 /* Cada video ocupa un tercio del ancho */
+  border-radius: 8px;         /* Bordes redondeados opcionales */
+}
+
 .video-ig {
   width: 320px;      /* tamaño típico Instagram */
   height: 320px;     /* cuadrado */
