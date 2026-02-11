@@ -115,17 +115,17 @@ const servicesData = {
 peluqueria: {
         title: "Peluquería (Hair Styling & Cutting)",
         desc: "Tu estilo, a tu manera. Creamos cortes y peinados pensados para resaltar tu personalidad y hacerte sentir bien en cada ocasión.<br><br>• Corte Femenino personalizado<br>• Peinado y Styling para tu dia a dia o eventos<br>• Recogidos para fiestas o eventos<br>• Ondas (Al agua y Rotas)<br>• Acabados profesionales de larga duración",
-        video: "imagenes/Cliente3.mp4"
+        video: "imagenes/Peinados 2.mp4"
     },
     colorimetria: {
         title: "Colorimetría (Master Color Art)",
         desc: "Alquimia pura para tu cabello. Especialistas en técnicas de iluminación y matices que respetan la salud de tu fibra capilar.<br><br>• Coloración de Raíz Orgánica<br>• Balayage & High Lights de Lujo<br>• Mechas de Contorno y Precisión<br>• Matizados de Brillo Espejo<br>• Coloración Botánica y Barros",
-        video: "imagenes/Cliente1.mp4" 
+        video: "imagenes/Balayage2.jpg" 
     },
     tratamientos: {
         title: "Tratamientos (Hair Care Rituals)",
         desc: "Rituales de reparación y rejuvenecimiento. Transformamos la textura de tu cabello con las fórmulas más avanzadas del mercado.<br><br>• Alisado Orgánico Premium<br>• Bótox y Rejuvenecimiento Capilar<br>• Terapias de Reconstrucción Intensiva<br>• Tratamientos Antifrizz y Nutrición<br>• Ampollas de Cuidado Específico",
-        video: "imagenes/Cliente2.mp4"
+        video: "imagenes/Servicios4.jpeg"
     },
     caballeros: {
         title: "Caballeros (The Gentlemen’s Club)",
@@ -135,7 +135,7 @@ peluqueria: {
     estetica: {
         title: "Estética (Skincare & Beauty)",
         desc: "La excelencia del cuidado integral. Elevamos tu belleza natural con tratamientos de vanguardia y resultados excepcionales.<br><br>• Manicura y Pedicura de Alta Gama<br>• Diseño de Mirada (Microblading & Pestañas)<br>• Faciales Avanzados (Dermapen & Punta de Diamante)<br>• Masajes Terapéuticos y Relajantes<br>• Depilación y Diseño de Cejas con Hilo",
-        video: "imagenes/Cliente2.mp4"
+        video: "imagenes/Maquillaje 1-4.jpg"
     },
     jubilados: {
         title: "Días Dorados (Senior Excellence)",
