@@ -115,7 +115,7 @@ const servicesData = {
 peluqueria: {
         title: "Peluquería (Hair Styling & Cutting)",
         desc: "Tu estilo, a tu manera. Creamos cortes y peinados pensados para resaltar tu personalidad y hacerte sentir bien en cada ocasión.<br><br>• Corte Femenino personalizado<br>• Peinado y Styling para tu dia a dia o eventos<br>• Recogidos para fiestas o eventos<br>• Ondas (Al agua y Rotas)<br>• Acabados profesionales de larga duración",
-        video: "imagenes/Peinados 2.mp4"
+        video: "imagenes/Peinados2.mp4"
     },
     colorimetria: {
         title: "Colorimetría (Master Color Art)",
