@@ -151,20 +151,49 @@ function showService(id, element) {
 
     // 2. Animación de salida
     const display = document.getElementById('service-display');
+    const videoWrapper = document.querySelector('.video-wrapper'); // Contenedor del media
     display.style.opacity = 0;
 
     setTimeout(() => {
-        // 3. Cambiar datos
+        // 3. Obtener datos
         const data = servicesData[id];
         document.getElementById('service-title').innerHTML = data.title;
         document.getElementById('service-desc').innerHTML = data.desc;
         
-        const video = document.getElementById('service-video');
-        const source = document.getElementById('video-source');
-        source.src = data.video;
-        
-        video.load(); // Recarga el video con la nueva fuente
-        video.play();
+        // Detectar si el recurso es video o imagen por su extensión
+        const esVideo = data.video.match(/\.(mp4|webm|ogg|mov)$/i);
+
+        // Limpiar el contenedor para el nuevo recurso
+        videoWrapper.innerHTML = '';
+
+        if (esVideo) {
+            // Crear elemento Video
+            const video = document.createElement('video');
+            video.id = 'service-video';
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.setAttribute('playsinline', '');
+            video.setAttribute('poster', 'img/placeholder.jpg'); // Tu poster original
+            
+            const source = document.createElement('source');
+            source.src = data.video;
+            
+            video.appendChild(source);
+            videoWrapper.appendChild(video);
+            
+            video.load();
+            video.play().catch(e => console.log("Autoplay bloqueado o carga fallida"));
+        } else {
+            // Crear elemento Imagen
+            const img = document.createElement('img');
+            img.id = 'service-media-img'; // ID único para imagen si necesitas CSS específico
+            img.src = data.video; // Aunque el campo se llame 'video' en tu data, aquí va la imagen
+            img.style.width = '100%'; 
+            img.style.display = 'block';
+            
+            videoWrapper.appendChild(img);
+        }
 
         // 4. Animación de entrada
         display.style.opacity = 1;
