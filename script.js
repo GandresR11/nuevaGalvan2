@@ -130,12 +130,12 @@ peluqueria: {
     caballeros: {
         title: "Caballeros (The Gentlemen’s Club)",
         desc: "La distinción masculina en manos expertas. Un refugio de cuidado donde la tradición se fusiona con el estilismo contemporáneo.<br><br>• Corte con Lavado<br>• Ritual de Cuidado de Barba<br>• Estilismo Masculino a Medida<br>• Corte Junior de Alta Calidad",
-        video: "imagenes/Cliente3.mp4"
+        video: "imagenes/Caballeros1.jpeg"
     },
     estetica: {
         title: "Estética (Skincare & Beauty)",
         desc: "La excelencia del cuidado integral. Elevamos tu belleza natural con tratamientos de vanguardia y resultados excepcionales.<br><br>• Manicura y Pedicura de Alta Gama<br>• Diseño de Mirada (Microblading & Pestañas)<br>• Faciales Avanzados (Dermapen & Punta de Diamante)<br>• Masajes Terapéuticos y Relajantes<br>• Depilación y Diseño de Cejas con Hilo",
-        video: "imagenes/Maquillaje 1-4.jpg"
+        video: "imagenes/Estetica1.jpeg"
     },
     jubilados: {
         title: "Días Dorados (Senior Excellence)",
