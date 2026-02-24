@@ -201,11 +201,19 @@ function showService(id, element) {
 }
 function moveSlider(direction) {
     const wrapper = document.getElementById('slider-wrapper');
-    const scrollAmount = wrapper.clientWidth; // Se mueve el ancho visible (3 elementos)
+    const slide = wrapper.querySelector('.slide');
+    
+    // Obtenemos el ancho de un solo elemento
+    const slideWidth = slide.clientWidth;
+    // Obtenemos el valor del gap definido en CSS (20px)
+    const gap = 20; 
+
+    // Calculamos el desplazamiento total de una sola unidad
+    const scrollStep = slideWidth + gap;
 
     if (direction === 1) {
-        wrapper.scrollLeft += scrollAmount;
+        wrapper.scrollLeft += scrollStep;
     } else {
-        wrapper.scrollLeft -= scrollAmount;
+        wrapper.scrollLeft -= scrollStep;
     }
 }
