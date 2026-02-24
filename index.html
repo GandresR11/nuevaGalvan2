@@ -91,21 +91,19 @@
 <section id="exclusivo-novias">
     <h2 class="section-title aos-init aos-animate" data-aos="fade-up">Exclusivos para <span>Novias</span></h2>
 
-    <section id="novias-section">
-    <div class="slider-wrapper">
-        <div class="videos-container" id="novias-slider">
-            <div class="slide-item"><img src="imagenes/Novias1.jpeg" class="video-ig"></div>
-            <div class="slide-item"><video src="imagenes/Novia7v.mp4" class="video-ig" autoplay muted loop playsinline></video></div>
-            <div class="slide-item"><img src="imagenes/Novias2.jpeg" class="video-ig"></div>
-            <div class="slide-item"><video src="imagenes/Novias 1.mp4" class="video-ig" autoplay muted loop playsinline></video></div>
-        </div>
-    </div>
+<section id="novias-slider-section">
+    <div class="slider-container">
+        <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
 
-    <div class="slider-nav">
-        <button class="nav-dot active" onclick="scrollToSlide(0)"></button>
-        <button class="nav-dot" onclick="scrollToSlide(1)"></button>
-        <button class="nav-dot" onclick="scrollToSlide(2)"></button>
-        <button class="nav-dot" onclick="scrollToSlide(3)"></button>
+        <div class="slider-wrapper" id="slider-wrapper">
+            <div class="slide"><video src="imagenes/Novias 1.mp4" autoplay muted loop playsinline></video></div>
+            <div class="slide"><img src="imagenes/Novias1.jpeg" alt="Novia 1"></div>
+            <div class="slide"><video src="imagenes/novias2.mp4" autoplay muted loop playsinline></video></div>
+            <div class="slide"><img src="imagenes/novias3.jpg" alt="Novia 3"></div>
+            <div class="slide"><video src="imagenes/Novia7v.mp4" autoplay muted loop playsinline></video></div>
+            </div>
+
+        <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
     </div>
 </section>
 
