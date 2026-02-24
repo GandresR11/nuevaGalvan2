@@ -199,3 +199,25 @@ function showService(id, element) {
         display.style.opacity = 1;
     }, 400);
 }
+function scrollToSlide(index) {
+    const slider = document.getElementById('novias-slider');
+    const dots = document.querySelectorAll('.nav-dot');
+    const slideWidth = slider.querySelector('.slide-item').clientWidth;
+    
+    // Mover el scroll
+    slider.scrollLeft = index * (slideWidth + 10); // +10 por el gap del CSS
+
+    // Actualizar clase activa en los puntos
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+// Opcional: Actualizar el punto activo cuando el usuario desliza manualmente
+document.getElementById('novias-slider').addEventListener('scroll', function() {
+    const slider = this;
+    const index = Math.round(slider.scrollLeft / slider.clientWidth);
+    const dots = document.querySelectorAll('.nav-dot');
+    
+    dots.forEach(dot => dot.classList.remove('active'));
+    if(dots[index]) dots[index].classList.add('active');
+});
