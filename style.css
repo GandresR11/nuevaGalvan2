@@ -712,8 +712,9 @@ video::-webkit-media-controls-play-button {
     border: 1px solid #b19470; /* Tu dorado */
     padding: 20px;
     border-radius: 12px;
-    background-color: #fdfaf6;
+    background-color: var(--plateado);
     transition: transform 0.3s ease;
+    color: var(--dorado);
 }
 
 .servicio-card:hover {
@@ -730,7 +731,7 @@ video::-webkit-media-controls-play-button {
 
 /* SECTOR 3 */
 .sector-cta {
-    background: #f4f4f4;
+    background: var(--dorado);
     padding: 40px;
     border-radius: 20px;
 }
@@ -754,3 +755,4 @@ video::-webkit-media-controls-play-button {
 .btn-novias2:hover {
     background-color: #8a7356;
 }
+
