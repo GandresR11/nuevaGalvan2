@@ -668,7 +668,7 @@ video::-webkit-media-controls-play-button {
     padding: 15px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 50%;
+    border-radius: 20%;
     font-size: 20px;
     transition: 0.3s;
 }
