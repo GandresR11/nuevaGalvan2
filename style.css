@@ -716,20 +716,6 @@ video::-webkit-media-controls-play-button {
     .slide img, .slide video {
         height: 400px; /* Ajustamos la altura para que no ocupe toda la pantalla del cel */
     }
-
-    /* Opcional: hacemos las flechas más pequeñas en móvil */
-    .prev-btn, .next-btn {
-        padding: 10px;
-        font-size: 16px;
-    }
-}
-
-
-
-
-/* Responsive: mostrar solo 1 en móviles */
-@media (max-width: 768px) {
-    .slide { min-width: 100%; }
     .prev-btn { left: 5px; }
     .next-btn { right: 5px; }
 }
