@@ -696,7 +696,7 @@ video::-webkit-media-controls-play-button {
 .sector-info p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #444;
+    color: var(--plateado);
     margin-bottom: 40px;
 }
 
