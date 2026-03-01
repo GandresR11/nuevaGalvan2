@@ -217,3 +217,42 @@ function moveSlider(direction) {
         wrapper.scrollLeft -= scrollStep;
     }
 }
+
+  const track = document.querySelector('.carousel-track');
+  const items = Array.from(document.querySelectorAll('.carousel-item'));
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+
+  function getItemsPerView() {
+    return window.innerWidth <= 768 ? 1 : 3;  // 1 en móvil, 3 en desktop
+  }
+
+  function updateCarousel() {
+    const itemWidth = items[0].getBoundingClientRect().width;
+    const itemsPerView = getItemsPerView();
+    const maxIndex = items.length - itemsPerView;
+
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    const offset = -currentIndex * itemWidth;
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex += 1; // mueve de a 1
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex -= 1; // mueve de a 1
+    updateCarousel();
+  });
+
+  window.addEventListener('resize', updateCarousel);
+
+  // Inicializar
+  window.addEventListener('load', updateCarousel);
+
