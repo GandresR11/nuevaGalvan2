@@ -846,6 +846,9 @@ position: relative;
   .carousel-item {
     flex: 0 0 100%;
   }
+   .carousel-item img[src$="Novias1.jpeg"] {
+    object-fit: scale-down;
+  }
 }
 
 
