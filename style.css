@@ -793,11 +793,14 @@ video::-webkit-media-controls-play-button {
 
 /* Contenedor general */
 .carousel {
-  position: relative;
-  width: 100%;
-  max-width: 900px;   /* ajústalo a tu diseño */
-  margin: auto;
-  overflow: hidden;
+position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 5%;
+    background-color: white;
+    border-radius: 15px;
 }
 
 /* Pista deslizante */
