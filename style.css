@@ -791,3 +791,58 @@ video::-webkit-media-controls-play-button {
     background-color: #8a7356;
 }
 
+/* Contenedor general */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;   /* ajústalo a tu diseño */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Pista deslizante */
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* Cada item del carrusel */
+.carousel-item {
+  flex: 0 0 33.3333%;          /* 3 ítems visibles en desktop */
+  height: 250px;               /* alto uniforme; ajústalo */
+  position: relative;
+}
+
+/* Imagenes y videos del mismo tamaño */
+.carousel-item img,
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* rellena recortando si es necesario */
+  display: block;
+}
+
+/* Botones */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-btn.prev { left: 5px; }
+.carousel-btn.next { right: 5px; }
+
+/* Versión móvil: 1 ítem visible */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+}
+
+
