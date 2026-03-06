@@ -247,7 +247,7 @@ section {padding: 5%;text-align: center;}
                 url('https://github.com/GandresR11/nuevaGalvan/blob/main/imagenes/Fondo1.jpeg?raw=true'); /* Cambia esta URL por la foto de tu local */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     padding: 100px 5%;
 }
 .services-section {
