@@ -94,12 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const modalSq = document.getElementById("bookingModal");
 const btnSq = document.getElementById("openModalSq");
 const closeBtnSq = document.querySelector(".close-button");
-
+const btnSq1 = document.getElementById("openModalSq1");
+const btnSq2 = document.getElementById("openModalSq2");
 // Abrir modal
 btnSq.onclick = function() {
     modalSq.style.display = "block";
 }
-
+btnSq1.onclick = function() {
+    modalSq.style.display = "block";
+}
+btnSq2.onclick = function() {
+    modalSq.style.display = "block";
+}
 // Cerrar modal al hacer clic en la X
 closeBtnSq.onclick = function() {
     modalSq.style.display = "none";
